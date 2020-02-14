@@ -28,8 +28,6 @@ def donuts(count):
         return 'Number of donuts: ' + str(count)
     else:
         return 'Number of donuts: many'
-    
-
 
 # B. both_ends
 # Given a string s, return a string made of the first 2
@@ -37,8 +35,9 @@ def donuts(count):
 # so 'spring' yields 'spng'. However, if the string length
 # is less than 2, return instead the empty string.
 def both_ends(s):
-    """Your code goes here.  Edit this docstring."""
-    return
+    if len(s) < 2:
+        return ''
+    return s[:2] + s[-2:]
 
 
 # C. fix_start
