@@ -50,8 +50,13 @@ def both_ends(s):
 # Hint: s.replace(stra, strb) returns a version of string s
 # where all instances of stra have been replaced by strb.
 def fix_start(s):
-    """Your code goes here.  Edit this docstring."""
-    return
+    first_character = s[0]
+    # print (first_character)
+    remaining_string = s[1:]
+    string_with_asterisk = remaining_string.replace(first_character, '*')
+    # print(string_with_asterisk)
+    result = first_character + string_with_asterisk
+    return result
 
 
 # D. MixUp
