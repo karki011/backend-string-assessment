@@ -39,7 +39,6 @@ def both_ends(s):
         return ''
     return s[:2] + s[-2:]
 
-
 # C. fix_start
 # Given a string s, return a string
 # where all occurences of its first char have
